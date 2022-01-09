@@ -1,0 +1,125 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button{
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.Flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+/*game*/
+html , body , section , .ball img{
+    height: 100%;
+}
+body{
+    background: url("../img/snow.jpg") fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    position: fixed;
+    width: 100%;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 20px 0px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header h2{
+    font-size: 32px;
+    color: rgb(0, 255, 0);
+}
+section{
+    background-color: rgba(0, 0, 0, 0.329);
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 20px 50px 20px;
+}
+.container{
+    max-width: 800px;
+    height: 80%;
+    background-color: rgba(35, 34, 75, 0.918);
+    border-radius: 20px;
+    border: solid 1px rgba(35, 34, 75, 0.918);
+}
+.ball{
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    width: 100px;
+    height: 100px;
+    margin-left: 47%;
+    margin-top: 30%;
+}
+.container,.ball img{
+    width: 100%;
+}
+#button{
+    height: 40px;
+    width: 160px;
+    background-color: rgb(221, 138, 6);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-radius: 10px;
+}
+.medium{
+    background: url("../img/medium.png") fixed;
+}
+@media(max-width: 750px){
+    header h2{
+        font-size: 20px;
+    }
+}
+@media(max-width: 450px){
+    header h2{
+        font-size: 13px;
+    }
+    #button{
+        height: 25px;
+        width: 125px;
+        font-size: 16px;
+    }
+}
